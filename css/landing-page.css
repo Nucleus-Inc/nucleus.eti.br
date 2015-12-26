@@ -69,6 +69,10 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+.show-mobile{
+    display: none;
+}
+
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
@@ -90,6 +94,12 @@ h6 {
 
     .intro-divider {
         width: 100%;
+    }
+    
+    .show-mobile{
+        display: inline;
+        font-size: medium;
+        margin-left: 0.5em;
     }
 }
 
@@ -175,4 +185,20 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+#email{
+    text-decoration: none;
+}
+
+#email:visited{
+    text-decoration: none;
+}
+
+#email:focused{
+    text-decoration: none;
+}
+
+#email:hover{
+    text-decoration: none;
 }
