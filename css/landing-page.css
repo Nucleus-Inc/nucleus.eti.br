@@ -4,6 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+header,
 body,
 html {
     width: 100%;
@@ -22,7 +23,8 @@ h6 {
 }
 
 .bg-color{
-    background-color: rgb(35,35,35);
+    background-color: transparent;
+    border-bottom-color: transparent;
 }
 
 .margin-ftrTop{
@@ -38,17 +40,42 @@ h6 {
     font-weight: 400;
 }
 
-#intro{
-    position: relative;
+.icon-color{
+    color: white;
+}
+
+#st_icon:hover{
+    color: lightgray;
+}
+
+#ab_icon:hover{
+    color: lightgray;
+}
+
+#se_icon:hover{
+    color: lightgray;
+}
+
+#co_icon:hover{
+    color: lightgray;
+}
+
+#introHeader{
+    background: url(../img/intro-bg.jpg) 50% 0 no-repeat fixed;
+    background-size: cover;
+    margin: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100% !important;
+    height: 100%;
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) 50% 0 no-repeat fixed;
-    background-size: cover;
+    z-index: 4;
+    position: relative;
 }
 
 .intro-message {
@@ -77,36 +104,6 @@ h6 {
     display: none;
 }
 
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-    
-    .show-mobile{
-        display: inline;
-        font-size: medium;
-        margin-left: 0.5em;
-    }
-}
-
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
@@ -116,13 +113,11 @@ h6 {
 
 .content-section-a {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: white;
 }
 
 .content-section-b {
     padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
 }
 
 .section-heading {
@@ -157,14 +152,45 @@ h6 {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
 }
 
 @media(max-width:767px) {
+    
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+    
+    .show-mobile{
+        display: inline;
+        font-size: medium;
+        margin-left: 0.5em;
+    }
+    
     .banner h2 {
         margin: 0;
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -180,29 +206,57 @@ h6 {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+    
+    #introHeader{
+        min-height: 568px;
+    }
+    
+    .bg-color{
+        background-color: rgb(35,35,35);
+    }
+
 }
 
-footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
 }
 
-p.copyright {
-    margin: 15px 0 0;
+@media(max-width:480px) {
+    header{
+        margin-top: 50px;
+    }
 }
 
-#email{
-    text-decoration: none;
+@media(max-width: 767px) and (orientation: landscape){
+     main{
+        margin-top: 200px;
+    }
 }
 
-#email:visited{
-    text-decoration: none;
-}
+@media screen and (max-width: 480px) and (orientation: landscape){
 
-#email:focused{
-    text-decoration: none;
-}
-
-#email:hover{
-    text-decoration: none;
+    #introHeader{
+        min-height: 320px;
+    }
+    
+    .intro-header{
+        margin-top: -10px;
+    }
+    
+    header{
+        margin-top: 5px;
+    }
+    
+    li.left{
+        float: left;
+        margin-left: 0.1em;
+    }
+    
+    main{
+        margin-top: 0;
+    }
+    
 }
