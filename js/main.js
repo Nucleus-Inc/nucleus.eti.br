@@ -16,8 +16,8 @@
     $(".scroll").click(function (event) {
         event.preventDefault();
         var idElemento = $(this).attr("href");
-        whiteBtn();
         $(this).children('span').css('color','lightgray');
+        last = this;
         var deslocamento = $(idElemento).offset().top;
         $('html, body').animate({ scrollTop: deslocamento }, 'slow');
         $('.navbar-toggle').click();
@@ -27,6 +27,7 @@
     var factor = 0.02;
     var scrollDown;
     var bkp = 0;
+    var lastItem = -1;
     
     $(window).scroll(function(){
         
@@ -39,7 +40,9 @@
         bkp = height;
         
         if(!isMobile){
+            
             if(height >= 50){
+                
                 $('.bg-color').css('background-color', 'rgb(35,35,35)');
                 $('.topnav').css('margin-top','0');
                 $('#introHeader').css('opacity','0.85');
@@ -56,10 +59,13 @@
                 }
                 $('.headerTxt').css('opacity',opacity);
                 show = true;
-                
+            
                 $('.anchor').each(function(item){
                     if ($(this).position().top <= height+340) {
-                        whiteBtn();
+                        if(lastItem!=-1){
+                            $('.scroll').eq(lastItem).children('span').css('color','white');
+                        }
+                        lastItem = item;
                         $('.scroll').eq(item).children('span').css('color','lightgray');
                     }
                 });
@@ -80,12 +86,5 @@
         if(!isMobile)
             $('.parallax').scrolly({bgParallax: true});
     });
-    
-    function whiteBtn(){
-        $('#st_icon').css('color','white');
-        $('#ab_icon').css('color','white');
-        $('#se_icon').css('color','white');
-        $('#co_icon').css('color','white');
-    }
     
 })(jQuery);

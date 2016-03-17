@@ -22,7 +22,7 @@
     <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 </head>
@@ -39,22 +39,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#"><img style="margin-top: -83px; width:200px; height: 200px" src="img/nucleus.svg" alt="Nucleus Inc"></a>
+                <a class="navbar-brand topnav" href="#"><img style="margin-top: -10px;" src="img/nucleus.png" alt="Nucleus Inc"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="scroll" href="#top"><span id="st_icon" class="fa fa-home fa-2x icon-color"><span class="show-mobile"> Inicio</span></span></a>
+                        <a class="scroll" href="#top"><span class="fa fa-home fa-2x icon-color"><span class="show-mobile"> Inicio</span></span></a>
                     </li>
                     <li>
-                        <a class="scroll" href="#about"><span id="ab_icon" class="fa fa-info-circle fa-2x icon-color"><span class="show-mobile"> Sobre</span></span></a>
+                        <a class="scroll" href="#about"><span class="fa fa-info-circle fa-2x icon-color"><span class="show-mobile"> Sobre</span></span></a>
                     </li>
                     <li>
-                        <a class="scroll" href="#services"><span id="se_icon" class="fa fa-wrench fa-2x icon-color"><span class="show-mobile"> Serviços</span></span></a>
+                        <a class="scroll" href="#services"><span class="fa fa-wrench fa-2x icon-color"><span class="show-mobile"> Serviços</span></span></a>
                     </li>
                     <li>
-                        <a class="scroll" href="#contact"><span id="co_icon" class="fa fa-envelope fa-2x icon-color"><span class="show-mobile"> Contato</span></span></a>
+                        <a class="scroll" href="#team"><span class="fa fa-users fa-2x icon-color"><span class="show-mobile"> Equipe</span></span></a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#place"><span class="fa fa-map-marker fa-2x icon-color"><span class="show-mobile"> Local</span></span></a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#contact"><span class="fa fa-envelope fa-2x icon-color"><span class="show-mobile"> Contato</span></span></a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +74,7 @@
         <div class="container-fluid intro-header">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="intro-message wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s" data-wow-offset="0" data-wow-iteration="1">
+                    <div class="intro-message wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s" data-wow-offset="0" data-wow-iteration="1">
                         <h1 class="headerTxt">Precisando de alguma ajuda?</h1>
                         <h2 class="headerTxt" style="color: #EEE">Somos a melhor conexão entre você e o seu cliente</h2>
                     </div>
@@ -76,85 +82,92 @@
             </div>
         </div>
     </header>
-
-    <main class="container">
-
+    
+    <main id="id-main">
         <!-- ABOUT NUCLEUS -->
         <a class="anchor" id="about" name="about"></a>
-        <div class="content-section-a">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-6">
-                        <h2 class="section-heading">Sobre</h2>
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <p class="lead">A Nucleus é uma empresa de tecnologia focada em solucionar problema de forma inteligente para pessoas e empresas.<br>
-                        Trabalhamos com soluções de software, aplicações web, aplicativos mobile, consultoria e aplicações embarcadas.</p>
-                    </div>
-                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="img/003.jpg" alt="">
+        <section class="intro-main container">
+            <div class="content-section-a">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-sm-6">
+                            <h2 class="section-heading">Sobre</h2>
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
+                            <p class="lead">A Nucleus é uma empresa de tecnologia focada em solucionar problema de forma inteligente para pessoas e empresas.<br>
+                            Trabalhamos com soluções de software, aplicações web, aplicativos mobile, consultoria e aplicações embarcadas.</p>
+                        </div>
+                        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                            <img class="img-responsive" src="img/003.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </section>
+    
         <!-- SOFTWARE APPLICATIONS SECTION -->
         <a class="anchor" id="services" name="services"></a>
-        <div class="content-section-b">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                        <h2 class="section-heading">Aplicações de Software</h2>
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <p class="lead">Trabalhando com as melhores tecnologias do mercado, a Nucleus pode, certamente, suprir qualquer problema para você e sua empresa.<br> Se você precisa de uma solução para sua empresa, como um banco de dados automatizado por exemplo, conte conosco. A Nucleus irá melhorar o sistema da sua empresa, ou se preferir, fazemos do zero.</p>
-                    </div>
-                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="img/001.jpg" alt="">
+        <section class="intro-main container">
+            <div class="content-section-a">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                            <h2 class="section-heading">Aplicações de Software</h2>
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
+                            <p class="lead">Trabalhando com as melhores tecnologias do mercado, a Nucleus pode, certamente, suprir qualquer problema para você e sua empresa.<br> Se você precisa de uma solução para sua empresa, como um banco de dados automatizado por exemplo, conte conosco. A Nucleus irá melhorar o sistema da sua empresa, ou se preferir, fazemos do zero.</p>
+                        </div>
+                        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                            <img class="img-responsive" src="img/001.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- MOBILE APPLICATIONS SECTION -->
         <a id="mobile" name="mobile"></a>
-        <div class="content-section-a">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-6">
-                        <h2 class="section-heading">Aplicações Mobile</h2>
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <p class="lead">O mundo hoje está <strong>conectado</strong>. Estar sempre conectado vai lhe dar um passo à frente dos demais.<br>Se você precisa de uma solução mobile para sua empresa ou até mesmo para você, fale conosco.<br>Certamente nós podemos te ajudar.</p>
-                    </div>
-                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="img/004.jpg" alt="">
+        <section class="intro-main container">
+            <div class="content-section-a">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-sm-6">
+                            <h2 class="section-heading">Aplicações Mobile</h2>
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
+                            <p class="lead">O mundo hoje está <strong>conectado</strong>. Estar sempre conectado vai lhe dar um passo à frente dos demais.<br>Se você precisa de uma solução mobile para sua empresa ou até mesmo para você, fale conosco.<br>Certamente nós podemos te ajudar.</p>
+                        </div>
+                        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                            <img class="img-responsive" src="img/004.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- WEB APPLICATIONS SECTION -->
-        <div class"content=section-b">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                        <h2 class="section-heading">Aplicações Web</h2>
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <p class="lead">As aplicações web são as comuns no mundo da tecnologia. Toda empresa, seja grande ou pequena, precisa de um site hoje para poder estar no mercado.<br>Além de sites, podemos fazer completos webservices para solucionar o seu problema.</p>
-                    </div>
-                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="img/005.jpg" alt="">
+        <section class="intro-main container">
+            <div class="content-section-b">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                            <h2 class="section-heading">Aplicações Web</h2>
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
+                            <p class="lead">As aplicações web são as comuns no mundo da tecnologia. Toda empresa, seja grande ou pequena, precisa de um site hoje para poder estar no mercado.<br>Além de sites, podemos fazer completos webservices para solucionar o seu problema.</p>
+                        </div>
+                        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                            <img class="img-responsive" src="img/005.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- EMBEDDED SYSTEM SECTION -->
-        <div class="content-section-a">
-            <div class="container-fluid">
-                <div class="row">
+        <section style="display: none;" class="intro-main container">
+            <div class="content-section-a">
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-5 col-sm-6">
                             <h2 class="section-heading">Sistemas Embarcados</h2>
@@ -168,33 +181,157 @@
                     </div>
                 </div>
             </div>
-        </div>
-
+        </section>
+        
+        <!-- TEAM BUCLEUS -->
+        <a class="anchor" id="team" name="team"></a>
+        <section style="background-color: rgb(250,250,250);">
+            <div class="container">
+                <div class="content-section-b" style="background-color: rgb(250,250,250);">
+                    <div class="container">
+                        <div class="text-center">
+                            <h2>Conheça a equipe</h2>
+                            <hr style="padding-bottom: 45px;" class="name-heading-spacer">
+                        </div>
+                        <div class="wrapper-picture">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="wrapper">
+                                        <div class="picture">
+                                            <img src="img/allison.png" width="100%" height="100%">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h3 class="name-title-color">Alisson Oliveira</h3>
+                                            <h4 class="name-title-color">Desenvolvedor Web</h4>
+                                            <hr class="name-heading-spacer">
+                                            <a href="http://jcalisson.github.io/"><span class="fa fa-html5 fa-2x user-social"></span></a>
+                                            <a style="display: none;" href="https://www.facebook.com/alisson.oliveira.07"><span class="fa fa-facebook fa-2x user-social"></span></a>
+                                            <a style="display: none;" href="https://www.instagram.com/alissonjc/"><span class="fa fa-instagram fa-2x user-social"></span></a> 
+                                            <a href="https://github.com/jcalisson"><span class="fa fa-github fa-2x user-social"></span></a>
+                                            <span style="display: none;" class="fa fa-twitter fa-2x user-social"></span>
+                                            <span style="display: none;" class="fa fa-google-plus fa-2x user-social"></span>
+                                            <a href="https://www.linkedin.com/in/alissonjc"><span class="fa fa-linkedin fa-2x user-social"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="wrapper">
+                                        <div class="picture">
+                                            <img class="img img-rounded" src="img/augusto.png" width="100%" height="100%">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h3 class="name-title-color">Augusto Neto</h3>
+                                            <h4 class="name-title-color">Desenvolvedor Android</h4>
+                                            <hr class="name-heading-spacer">
+                                            <span style="display: none;" class="fa fa-external-link fa-2x user-social"></span>
+                                            <a href="https://www.facebook.com/Neto.Abreup?fref=ts"><span class="fa fa-facebook fa-2x user-social"></span></a>
+                                            <a href="https://www.instagram.com/ntaugusto/"><span class="fa fa-instagram fa-2x user-social"></span></a>
+                                            <a href="https://github.com/augustont"><span class="fa fa-github fa-2x user-social"></span></a>
+                                            <a href="https://twitter.com/ntaugust"><span class="fa fa-twitter fa-2x user-social"></span></a>
+                                            <span style="display: none;" class="fa fa-google-plus fa-2x user-social"></span>
+                                            <span style="display: none;" class="fa fa-linkedin fa-2x user-social"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="wrapper">
+                                        <div class="picture">
+                                            <img src="img/eduardo.png" width="100%" height="100%">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h3 class="name-title-color">Eduardo Castro</h3>
+                                            <h4 class="name-title-color">Desenvolvedor iOS</h4>
+                                            <hr class="name-heading-spacer">
+                                            <a href="http://eduhrcastro.github.io/#top"><span class="fa fa-html5 fa-2x user-social"></span></a>
+                                            <a href="https://www.facebook.com/profile.php?id=100004196825238"><span class="fa fa-facebook fa-2x user-social"></span></a>
+                                            <a href="https://www.instagram.com/eduhrcastro/"><span class="fa fa-instagram fa-2x user-social"></span></a>
+                                            <a href="https://github.com/eduhrcastro"><span class="fa fa-github fa-2x user-social"></span></a>
+                                            <a href="https://twitter.com/eduhrcastro"><span class="fa fa-twitter fa-2x user-social"></span></a>
+                                            <a style="display: none;" href="https://plus.google.com/105585237063886545927/posts"><span class="fa fa-google-plus fa-2x user-social"></span></a>
+                                            <a href="https://www.linkedin.com/in/eduhrcastro"><span class="fa fa-linkedin fa-2x user-social"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row divider">
+                                <div class="col-md-4">
+                                    <div class="wrapper">
+                                        <div class="picture">
+                                            <img src="img/gustavo.png" width="100%" height="100%">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h3 class="name-title-color">Gustavo Alves</h3>
+                                            <h4 class="name-title-color">Designer</h4>
+                                            <hr class="name-heading-spacer">
+                                            <span style="display: none;" class="fa fa-external-link fa-2x user-social"></span>
+                                            <a href="https://www.facebook.com/skypherus"><span class="fa fa-facebook fa-2x user-social"></span></a>
+                                            <span style="display: none;" class="fa fa-instagram fa-2x user-social"></span> 
+                                            <span style="display: none;" class="fa fa-github fa-2x user-social"></span>
+                                            <span style="display: none;" class="fa fa-twitter fa-2x user-social"></span>
+                                            <span style="display: none;" class="fa fa-google-plus fa-2x user-social"></span>
+                                            <span style="display: none;" class="fa fa-linkedin fa-2x user-social"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="wrapper">
+                                        <div class="picture">
+                                            <img class="clip-picture" src="img/igor.png" width="100%" height="100%">
+                                        </div>
+                                        <div class="text text-center">
+                                            <h3 class="name-title-color">Igor Lopes</h3>
+                                            <h4 class="name-title-color">Desenvolvedor Android</h4>
+                                            <hr class="name-heading-spacer">
+                                            <span style="display: none;" class="fa fa-external-link fa-2x user-social"></span>
+                                            <a href="https://www.facebook.com/igoroliveiralf?fref=ts"><span class="fa fa-facebook fa-2x user-social"></span></a>
+                                            <a href="https://www.instagram.com/igor.olf/"><span class="fa fa-instagram fa-2x user-social"></span></a>
+                                            <a href="https://github.com/Igor-Lopes"><span class="fa fa-github fa-2x user-social"></span></a>
+                                            <span style="display: none;" class="fa fa-twitter fa-2x user-social"></span>
+                                            <span style="display: none;" class="fa fa-google-plus fa-2x user-social"></span>
+                                            <a href="https://br.linkedin.com/in/igor-lopes-77663661"><span class="fa fa-linkedin fa-2x user-social"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>        
     </main>
-
+    
+    <!-- WHERE WE WORK -->
+    <a class="anchor" id="place" name="place"></a>
+    <div style="padding-top: 45px;" class="text-center">
+        <h2>Onde trabalhamos</h2>
+        <hr style="padding-bottom: 45px;" class="name-heading-spacer">
+        <div id="map"></div>
+    </div>
+    
     <!-- CONTACT SECTION -->    
     <a class="anchor" id="contact" name="contact"></a>
     <div class="banner" data-velocity="-.3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="text-center" style="padding-bottom: 50px;">
                     <h2>Contate-nos:</h2>
+                    <hr style="border-top: 3px solid rgb(255,255,255);" class="name-heading-spacer">
                 </div>
-                <div class="col-lg-8">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="mailto:nucleus@nucleus.eti.br" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">E-mail</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/nucleus_inc" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/nucleus.eti" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/Nucleus_Inc" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                    </ul>
+                <div class="contact col-md-3 text-center">
+                     <a class="contact-link" href="mailto:nucleus@nucleus.eti.br"><i class="icon fa fa-envelope-o fa-4x"></i></a>
+                     <a class="contact-link" href="mailto:nucleus@nucleus.eti.br"><h4>nucleus@nucleus.eti.br</h4></a>
+                </div>
+                <div class="contact col-md-3 text-center">
+                     <a class="contact-link" href="https://www.facebook.com/nucleus.eti"><i class="icon fa fa-facebook fa-4x"></i></a>
+                     <a class="contact-link" href="https://www.facebook.com/nucleus.eti"><h4>/nucleus.eti</h4></a>
+                </div>
+                <div class="contact col-md-3 text-center">
+                    <a class="contact-link" href="https://www.instagram.com/nucleus_inc"><i class="icon fa fa-instagram fa-4x"></i></a>
+                    <a class="contact-link" href="https://www.instagram.com/nucleus_inc"><h4>@nucleus_inc</h4></a>
+                </div>
+                <div class="contact col-md-3 text-center">
+                     <a class="contact-link" href="https://twitter.com/nucleus_inc"><i class="icon fa fa-twitter fa-4x"></i></a>
+                     <a class="contact-link" href="https://twitter.com/nucleus_inc"><h4>@nucleus_inc</h4></a>
                 </div>
             </div>
         </div>
@@ -206,8 +343,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <p class="copyright text-muted small">Copyright &copy; Nucleus Technology 2016. Todos os direitos reservados.</p>
-                        <p class="text-muted small">Contatos: nucleus@nucleus.eti.br</p>
+                        <p class="copyright text-muted small">Copyright &copy; Nucleus Inc. 2016. Todos os direitos reservados.</p>
+                        <p style="padding: 0px; margin: 0px;" class="text-muted small">Contatos: nucleus@nucleus.eti.br</p>
+                        <p style="padding: 0px; margin: 0px;" class="text-muted small">Telefones: (85)3025-4949 / 3099-0814 / (OI) 98884-5775 / (TIM) 99983-0111</p>
+                        <p class="text-muted small">Rua Marcondes Pereira, 1381 - Dionísio Torres, Fortaleza - CE, 60135-222</p>
                     </div>
                 </div>
             </div>
@@ -218,8 +357,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.scrolly.js"></script>
-    
     <script src="js/wow.js"></script>
+    
     <script>
         var wow = new WOW(
           {
@@ -237,6 +376,25 @@
         );
         wow.init();
     </script>
+    <script>
+      function initMap() {
+        var myLatLng = {lat: -3.7503134010409354, lng:-38.50409745000002};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: myLatLng,
+          scrollwheel:  false
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
